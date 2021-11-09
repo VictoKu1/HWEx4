@@ -6,6 +6,7 @@
 
 
 Use W,A,S,D to move.
+
 Use Mouse to Aim and Mouse Right Button to Shoot.
 
 Was made as one a weekly task in a unity game development course.
