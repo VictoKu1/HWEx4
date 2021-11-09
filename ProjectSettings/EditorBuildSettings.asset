@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MovementAndAnim.unity
     guid: 238091607dbaf1c44b0ee84afb05069c
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 51c5dea4e9bb43a4e8211b50fd328a6e, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: cda2548b5261b53478b7f5db5252595d, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b62c8f81864b785489472e76887a5817, type: 2}

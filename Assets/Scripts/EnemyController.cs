@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] float timeToDisapear; 
     GameObject player;
     Animator anim;
     bool isAlive = true;
@@ -30,8 +31,7 @@ public class EnemyController : MonoBehaviour
         {
             anim.SetTrigger("Boom1");
             isAlive = false;
-            //*0.267 is the time that optimally fitts the animation.
-            Destroy(gameObject, 0.267f);
+            Destroy(gameObject, timeToDisapear);
         }
     }
 

@@ -12,6 +12,7 @@ public class BasicMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Vector3 moveDirection;
     [SerializeField] Slider HP;
+    [SerializeField] int damageFromJelly;
     void Start()
     {
         HP.value = 100;
@@ -68,11 +69,11 @@ public class BasicMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            if (HP.value <= 15)
+            if (HP.value <= damageFromJelly)
             {
                 GameOver();
             }
-            HP.value -= 15;
+            HP.value -= damageFromJelly;
         }
     }
 }

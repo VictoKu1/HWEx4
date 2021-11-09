@@ -6,10 +6,12 @@ public class SpawnManager : MonoBehaviour
 {
     [SerializeField] Transform[] spawnPoints;
     [SerializeField] GameObject enemy;
+    [SerializeField] float time;
+    [SerializeField] float repeatRate;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEnemies", 0.5f, 0.5f);
+        InvokeRepeating("SpawnEnemies", time, repeatRate);
     }
 
     void SpawnEnemies()
